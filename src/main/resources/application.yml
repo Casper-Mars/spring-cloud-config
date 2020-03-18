@@ -1,0 +1,21 @@
+server:
+  port: 8082
+
+spring:
+  application:
+    name: config
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitee.com/caspermars/spring-config.git
+  rabbitmq:
+    host: 114.55.253.170
+    username: casper
+    password: casper
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
